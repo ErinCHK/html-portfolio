@@ -1,0 +1,301 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+
+}
+
+              /* Header/logo Title */
+              .header {
+                padding: 60px;
+                text-align: center;
+                background: #1abc9c;
+                color: white;
+              }
+
+            /* Style the top navigation bar */
+            .navbar {
+              display: flex;
+              background-color: #333;
+            }
+
+            /* Style the navigation bar links */
+            .navbar a {
+              color: white;
+              padding: 14px 20px;
+              text-decoration: none;
+              text-align: center;
+            }
+
+
+            .navbar a:hover {
+              background-color: #ddd;
+              color: black;
+            }
+
+.homePage {  
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.left_col {
+  display:flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 4px 4px 5px #aaa;
+  align-items: center;
+  background-color: #eafcfc;
+  background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
+}
+
+.icon{
+    width: 200px;
+    height: 200px;
+    background-color: #aaa;
+    border-radius: 100%;
+}
+
+.home_navi_list{
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 20px;
+    list-style: none;
+}
+.home_navi_list > *> a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.home_navi_list >*> a:hover{
+    text-decoration: none;
+    text-shadow: 0px 0px 5px  rgb(152, 182, 214);
+}
+
+.home_top {
+  height:500px;
+  background: #ffffff;
+  
+}
+
+.right_part {
+  flex: auto;
+  background-color: white;
+  min-width: 100px;
+
+}
+
+.home_topImage {
+  display: flex;
+  justify-content: flex-end;
+}
+.homePageBigPic-words{
+  height: 300px;;
+  margin-right: 130px;
+
+}
+.home_skillsets {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-right: 100px;
+  flex-wrap: wrap;
+
+}
+.home_skillsets li{
+  border-radius: 20px;
+  text-align: center;
+  align-content: center;
+  height: 40px;
+  padding: 0px 15px 0px 15px;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size:15px;
+}
+
+.homePageBigPic{
+  height: 500px;;
+  float: right;
+
+/*   transform: translateX(-20px); */
+}
+
+.home_box_1,.home_box_2,.home_box_3 {
+  background-color:  #ffffff;
+  width: 100%;
+  height: 400px;
+  border: solid  #ffffff;
+}
+
+.home_box_1:hover,.home_box_2:hover,.home_box_3:hover {
+  border: solid rgb(254, 212, 221);
+  }
+
+.home_box_1,.home_box_3{
+  display: flex;
+  padding:  10px 50px 10px 50px;
+  align-items: center;
+  gap:80px;
+}
+.myPro_icon,.myho_icon{ 
+  flex-shrink: 0;
+
+  width: 300px;
+  height: 300px;
+  background-color: #aaa;
+  border-radius: 50px;}
+
+.myPro_box,.myho_box{
+  height: 100%;
+  width: 500px;
+  flex-grow: 1;
+  border-radius: 25px;
+  /*background-color: cadetblue;*/
+
+}
+.myPro_box > h1, .myEdu_box > h1, .myho_box > h1 {
+  color: #505050;
+  font-size: 43px;
+  padding: 150px 100px
+
+}
+.home_box_1:hover>.myPro_box > h1,.home_box_2:hover> .myEdu_box > h1,.home_box_3:hover> .myho_box > h1 {
+  color: #505050;
+  padding : 30px 100px ;
+  transform: translateY(-20px);
+  transition: transform 0.4s ;
+  text-shadow: 0px 0px 5px rgb(254, 212, 221);
+}
+
+.myPro_box > ul, .myEdu_box > ul, .myho_box >ul {
+  color: #505050;
+  font-size: 20px;
+  opacity: 0;
+  visibility: hidden;
+  padding-left: 100px;
+
+}
+.myPro_box > .btn-outline-primary, .myho_box >.btn-outline-primary,.myEdu_box >.btn-outline-primary{
+  opacity: 0;
+  visibility: hidden;
+  position: relative; 
+}
+.myPro_box > .btn-outline-primary, .myho_box >.btn-outline-primary{
+  float: right;
+}
+.myEdu_box >.btn-outline-primary{
+  float: left;
+}
+.home_box_1:hover>.myPro_box > ul,.home_box_2:hover> .myEdu_box > ul,.home_box_3:hover> .myho_box > ul,
+.home_box_1:hover>.myPro_box > .btn-outline-primary, .home_box_3:hover>.myho_box >.btn-outline-primary,.home_box_2:hover>.myEdu_box >.btn-outline-primary{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s;}
+
+.home_box_2{
+  display: flex;
+  padding : 10px 50px 10px 50px;
+  align-items: center;
+  gap:80px
+}
+.myEdu_icon{ 
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  background-color: #aaa;
+  border-radius: 50px;}
+
+.myEdu_box{
+  height: 100%;
+  width: 500px;
+  flex-grow: 1;
+  border-radius: 25px;
+ /* background-color: rgb(160, 95, 140);*/
+}
+.home_box img{
+  border-radius: 50px;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  transition: opacity 0.3s ease;
+
+}
+.normalImage{
+  opacity: 1;
+}
+.image-hover{
+  opacity: 0;
+}
+.home_box_1:hover .image-hover,.home_box_2:hover .image-hover,.home_box_3:hover .image-hover{
+  opacity: 1;
+  box-shadow: 5px 5px 10px rgb(120, 120, 120)
+}
+.home_box_1:hover .normalImage,.home_box_2:hover .normalImage,.home_box_3:hover .normalImage{
+  opacity: 0;
+}
+
+
+
+
+          /* Footer */
+          .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+          }
+
+          @media (max-width: 1350px){
+            .homePageBigPic-words{
+            height: 200px;;
+            margin-right: 90px;
+
+          }}
+          @media (max-width: 1500px) {
+          .home_box_1>.myPro_box > h1,.home_box_2> .myEdu_box > h1,.home_box_3> .myho_box > h1 ,
+          .home_box_1:hover>.myPro_box > h1,.home_box_2:hover> .myEdu_box > h1,.home_box_3:hover> .myho_box > h1  {
+              font-size: 30px;
+              text-align: center;
+              font-weight: bold;
+          }
+          .home_box_1>.myPro_box > ul,.home_box_2> .myEdu_box > ul,.home_box_3> .myho_box > ul ,
+          .home_box_1:hover>.myPro_box > ul,.home_box_2:hover> .myEdu_box > ul,.home_box_3:hover> .myho_box > ul{
+            font-size: 22px;
+          }
+          }
+
+
+          @media (max-width: 1100px) {
+
+            .homePage, .navbar {   
+              flex-direction: column;
+              flex-wrap:nowrap;
+            }
+            .left_col{
+              width: auto;
+            }
+            .myPro_icon{
+              flex-shrink: 0;
+
+            } } 
+      @media (max-width: 900px) {
+            .home_box_1>.myPro_box > h1,.home_box_2> .myEdu_box > h1,.home_box_3> .myho_box > h1 ,
+            .home_box_1:hover>.myPro_box > h1,.home_box_2:hover> .myEdu_box > h1,.home_box_3:hover> .myho_box > h1 ,
+            .home_box_1>.myPro_box > ul,.home_box_2> .myEdu_box > ul,.home_box_3> .myho_box > ul ,
+            .home_box_1:hover>.myPro_box > ul,.home_box_2:hover> .myEdu_box > ul,.home_box_3:hover> .myho_box > ul{
+  
+              font-size: 20px;
+            }
+          }
+            /*.myPro_box > h1, .myEdu_box > h1, .myho_box > h1 {
+              font-size: 30px;
+              text-align: center;
+              font-weight: bold;
+            }*/
