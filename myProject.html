@@ -27,13 +27,13 @@
             <div class="entry-text">
               <div class="skill">Python</div>
               <div class="edu_title" >Computer Vision</div>
-                <a href="https://colab.research.google.com/drive/1qv1y6tPJ_GlYVPstlUok1uN5pc5tT6on?usp=sharing">Google Colab: Machine Learning</a>
+                <a href="https://colab.research.google.com/drive/1qv1y6tPJ_GlYVPstlUok1uN5pc5tT6on?usp=sharing" target="_blank">Google Colab: Machine Learning</a>
                 <ul class="work_ul">
                   <li>Train a Logistic Regression model on MNIST dataset</li>
                   <li>Reduce the dimensionality of data using PCA</li>
                   <li>Generate noisy copy  and denoise</li>
                 </ul>
-                <a href="https://colab.research.google.com/drive/1BL9lDkJJFi2FhrAEWjYzT8JlqM2QTRBT?usp=sharing">Google Colab: Convolutional Neural Network</a>
+                <a href="https://colab.research.google.com/drive/1BL9lDkJJFi2FhrAEWjYzT8JlqM2QTRBT?usp=sharing" target="_blank">Google Colab: Convolutional Neural Network</a>
                 <ul class="work_ul">
                   <li>CNN on the CIFAR-10 dataset </li>
                   <li>Architecture with batch normalisation</li>
@@ -49,12 +49,12 @@
               <div class="entry-text">
                 <div class="skill">JavaScript</div>
                 <div class="edu_title" >React.js Web App : StrayPets</div>
-                  <a href="https://github.com/ErinCHK/reactjs-straypet.git">GitHub: React app</a>
+                  <a href="https://github.com/ErinCHK/reactjs-straypet.git" target="_blank">GitHub: React app</a>
                   <ul class="work_ul">
                     <li>Front-End web app development with react.js framework</li>
                     <li>Platform letting user tagging the location of stray pets</li>
                     <li>Multiple components including authentication</li>
-                    <li><a href="./images/ReactAppPlan.pdf">App planning & draft pdf</a></li>
+                    <li><a href="./images/ReactAppPlan.pdf" target="_blank">App planning & draft pdf</a></li>
                   </ul>
                  </div>
                 
@@ -69,11 +69,11 @@
             <div class="entry-text">
               <div class="skill">Video Editing</div>
               <div class="edu_title" >Stop Motion Animation</div>
-                <a href="https://youtu.be/2wWz83pkyfk?si=WWZoVk8CLShdoIvJ">YouTube: Video Link</a>
+                <a href="https://youtu.be/2wWz83pkyfk?si=WWZoVk8CLShdoIvJ" target="_blank">YouTube: Video Link</a>
                 <ul class="work_ul">
                   <li>Applying digital media technologies</li>
                   <li>Video Editing using CapCut</li>
-                  <li><a href="./images/EMIA 2200 Report.pdf">Project Report</a></li>
+                  <li><a href="./images/EMIA 2200 Report.pdf" target="_blank">Project Report</a></li>
                 </ul>
                </div>
               
@@ -90,7 +90,7 @@
             <div class="entry-text">
               <div class="skill">Figma</div>
               <div class="edu_title" >Figma UI Design for Mobile App </div>
-                <a href="https://www.figma.com/design/BeIk2qMMBJD47434NDFN0f/Tarot-Diary-App?node-id=0-1&t=mLsxa7D9296y9XmK-1">
+                <a href="https://www.figma.com/design/BeIk2qMMBJD47434NDFN0f/Tarot-Diary-App?node-id=0-1&t=mLsxa7D9296y9XmK-1" target="_blank">
                   Figma: app UI design</a>
                 <ul class="work_ul">
                   <li>Tarot Diary mobile app design</li>
@@ -106,5 +106,17 @@
           </div>
         </div>
       </div>
+
+     <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('js') === 'true') {
+                window.scrollTo({ top: 760, left: 0, behavior: 'smooth' }); 
+            }
+            if (urlParams.get('python') === 'true') {
+                window.scrollTo({ top: 100, left: 0, behavior: 'smooth' }); 
+            }
+        };
+    </script>
 </body>
 </html>

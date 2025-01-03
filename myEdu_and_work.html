@@ -15,7 +15,7 @@
       <div class="navbar">
         <a href="./index.html">Home</a>
         <a href="./myProject.html">My Project</a>
-        <a href="./about.html">More About  me</a>
+        <a href="./about.html">More About me</a>
       </div>
       <div class="container">
       <div class="section">
@@ -24,11 +24,13 @@
           <div class="entry-text">
             <div class="Date">2022 - Now</div>
             <div class="edu_title">Hong Kong University of Science and Technology - Bachelor Degree </div>
+            <hr/>
             
             <ul class="edu_ul">
               <li>Major in Computer Engineering</li>
               <li>Extended Major in Digital Media & Creative Art</li>
               <li>Minor in Business</li>
+             
             </ul>
         </div>          
         <div class="entry-img">
@@ -47,12 +49,13 @@
           <div class="entry-text">
           <div class="Date">Jun - Aug 2024</div>
           <div class="edu_title" > IT summer Intern - eHealth software development</div>
-            <a href="https://hk.linkedin.com/company/hospital-authority">Hong Kong Hospital Authority</a>
-            <ul class="work_ul">
+            <a href="https://hk.linkedin.com/company/hospital-authority" target="_blank">Hong Kong Hospital Authority</a>
+            <br>
+          <ul class="work_ul">
               <li>SQL for Data Extraction and Analysis</li>
               <li>SonarQube Bug Fixing</li>
               <li>Software Documentation</li>
-              <li><a href="./images/HAIT Intern reference letter.pdf">Refernce Letter form my supervisor</a></li>
+              <li><a href="./images/HAIT Intern reference letter.pdf" target="_blank">Refernce Letter form my supervisor</a></li>
             </ul></div>
           
           <div class="entry-img">
@@ -64,7 +67,8 @@
           <div class="entry-text">
           <div class="Date">Dec - Jan 2023-24</div>
           <div class="edu_title">Digital Marketing Intern</div>
-            <a href="https://www.cyberworld.hk/en/">Cyber World Creations (HK) Ltd</a>
+            <a href="https://www.cyberworld.hk/en/" target="_blank">Cyber World Creations (HK) Ltd</a>
+            <br>
             <ul class="work_ul">
               <li>WordPress for Web Management</li>
               <li>Adobe Photoshop, Adobe Illustrator & Canva</li>
@@ -79,7 +83,9 @@
           <div class="entry-text">
           <div class="Date">Jul - Aug 2023</div>
           <div class="edu_title">Summer Intern - Office of Training and Development</div>
-            <a href="https://www.customs.gov.hk/en/home/index.html">Hong Kong Customs and Excise Department</a>
+            <a href="https://www.customs.gov.hk/en/home/index.html" target="_blank">Hong Kong Customs and Excise Department</a>
+            <br>
+            
             <ul class="work_ul">
               <li>Event Management</li>
               <li>Prepare Promotional Materials</li>
@@ -99,6 +105,12 @@
     window.onload = function() {
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get('scroll') === 'true') {
+            window.scrollTo({ top: 780, left: 0, behavior: 'smooth' }); 
+        }
+        if (urlParams.get('cpp') === 'true') {
+            window.scrollTo({ top: 100, left: 0, behavior: 'smooth' }); 
+        }
+        if (urlParams.get('sql') === 'true') {
             window.scrollTo({ top: 780, left: 0, behavior: 'smooth' }); 
         }
     };
