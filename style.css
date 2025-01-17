@@ -23,6 +23,7 @@
   padding: 0px 15px 0px 15px;
   background-color: #5589c5;
   margin-bottom: 10px;
+
 }
 
 .Date {
@@ -59,7 +60,8 @@
   display: flex;
   flex-direction: column;
   margin-left: auto;
-  margin-right: 50px;
+  margin-right: 50px; 
+  margin-top: 20px;
   width: 450px;
   height: 350px;
 }
