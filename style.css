@@ -83,7 +83,11 @@
 }
 
 /*///////////////////////////////////////*/
+.self_intro{
+  color: rgb(205, 229, 228);
 
+  font-size: 20px;
+}
 * {
   box-sizing: border-box;
 }
@@ -283,7 +287,10 @@ body {
   font-size: 15px;
 }
 
-
+.home_skillsets1>*>a:hover,
+.home_skillsets2>*>a:hover {
+  color: #787171;
+}
 
 .home_box_1,
 .home_box_2,

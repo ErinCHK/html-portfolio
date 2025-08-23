@@ -111,10 +111,16 @@
         window.onload = function() {
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.get('js') === 'true') {
-                window.scrollTo({ top: 760, left: 0, behavior: 'smooth' }); 
+                window.scrollTo({ top: 700, left: 0, behavior: 'smooth' }); 
             }
             if (urlParams.get('python') === 'true') {
                 window.scrollTo({ top: 100, left: 0, behavior: 'smooth' }); 
+            }
+            if (urlParams.get('figma') === 'true') {
+                window.scrollTo({ top: 1500, left: 0, behavior: 'smooth' }); 
+            }
+            if (urlParams.get('video') === 'true') {
+                window.scrollTo({ top: 1000, left: 0, behavior: 'smooth' }); 
             }
         };
     </script>
